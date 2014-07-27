@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+	<title>KickStart Gallery</title>
+	<link rel="stylesheet" href="reset.css"/>
+	<link rel="stylesheet" href="gl-structure.css"/>
+	<link rel="stylesheet" href="gl-item.css"/>
+	<link rel="stylesheet" href="gl-style.css"/>
+	<link rel="stylesheet" href="gl-dailogs.css"/>
+</head>
+<body>
+	
+	<style type="text/css">
+
+		body, html{
+			height: 100%;
+			width: 100%;
+		}
+		
+		/*
+		[class^="gl-"]{
+			background: rgba(0,0,0,0.05);
+			outline: 1px solid black;
+		}
+		*/	
+		
+		
+
+		
+		
+		
+	</style>
+	
+	
+	<div class="gl-gallery">		
+	
+		<div class="gl-header">
+			<h1 class="gl-title">Gallery</h1>
+			<ul class="gl-nav">
+				<li class="gl-nav-item gl-counter">Items: {{count}} / {{total}}</li>
+				<li class="gl-nav-item gl-status-bar">Selected: {{src}}</li>		
+				<li class="gl-nav-item gl-search"><label for="search"><input id="search" type="search" placeholder="Search Gallery"/><button class="gl-btn">Search</button></label></li>
+				<li class="gl-nav-item gl-view-type">
+					<button data-action="thumb-view" class="gl-btn gl-toggle-btn gl-thumb-view selected"></button>
+					<button data-action="list-view" class="gl-btn gl-toggle-btn gl-list-view"></button>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="gl-main">
+			<ul class="gl-items gl-view-type-thumb">
+				<li class="gl-item">
+					<div class="gl-item-header">
+						<h4>{{Title}}</h4>
+					</div>
+					<div class="gl-item-content">
+						<img src="http://dummyimage.com/200x142" alt=""/>
+					</div>
+					<div class="gl-item-footer">
+						<button data-action="remove" class="gl-btn">Remove</button>
+						<button data-action="edit" class="gl-btn">Edit</button>
+					</div>
+				</li>	
+			</ul>
+		</div>
+		
+		<div class="gl-footer">
+			<button class="gl-btn gl-load-more">More...</button>
+			<!-- Extra Functionality -->
+		</div>		
+		
+		 <div class="dialog-layer">
+			
+			<div class="gl-light-box">
+				<button class="prev">&lt;</button>
+				<button class="close">&times;</button>
+				<button class="next">&gt;</button>
+				<div class="content">
+					<li class="gl-item">
+						<div class="gl-item-header">
+							<h4>{{Title}}</h4>
+						</div>
+						<div class="gl-item-content">
+							<img src="http://dummyimage.com/200x142" alt=""/>
+						</div>
+						<div class="gl-item-footer">
+							<button data-action="remove" class="gl-btn">Remove</button>
+							<button data-action="edit" class="gl-btn">Edit</button>
+						</div>
+					</li>	
+				</div>			
+			</div>
+				
+		 </div>	
+		
+	</div>
+	
+	<script type="text/javascript" src="gl-script.js"></script>
+	
+</body>
+</html>

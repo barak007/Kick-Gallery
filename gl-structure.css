@@ -1,0 +1,60 @@
+/* structure */
+
+.gl-gallery{
+	width:100%;
+	height:100%;
+}	
+.gl-header{
+	height: 40px;
+}
+.gl-main{
+	height: calc(100% - 80px);
+	overflow: auto;
+}
+
+.gl-footer{
+	height: 40px;
+}	
+
+.gl-title, .gl-nav{
+	float:left;
+}
+
+.gl-title{
+	width: 10%;
+}
+.gl-nav{
+	width: 90%;
+}
+
+.gl-nav	> *{
+	float:left;
+	height: 40px;
+}
+		
+
+.gl-search{
+	width: 20%;
+}		
+
+.gl-counter{
+	width: 28%;
+}
+
+.gl-status-bar{
+	width: 40%;
+}
+
+.gl-view-type{
+	width: 12%;
+}
+
+.gl-items{
+	overflow:hidden;
+	padding: 10px 0 0 10px;
+}
+
+.gl-view-type-thumb .gl-items{
+	overflow:hidden;
+}
+

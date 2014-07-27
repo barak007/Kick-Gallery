@@ -1,0 +1,33 @@
+
+.gl-item{
+	overflow:hidden;
+}	
+
+.gl-view-type-thumb .gl-item{
+	width: 200px;
+	float:left;
+	margin: 0 10px 10px 0;
+}
+	
+.gl-view-type-list .gl-item{
+	margin: 0px 10px 10px 0px;
+}
+
+.gl-item-header{
+	height: 24px;
+}
+.gl-item-content{
+	height: 142px;
+}
+
+.gl-item-footer{
+	overflow:hidden;
+}
+
+.gl-item-footer button{
+	width: 50%;
+	float:left;
+	height: 24px;
+	margin: 0;
+	padding:0;
+}
